@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+background-color: #f998b2;}
+
+
+
+
+.game {
+    width: 1000px;
+    height: 600px;
+
+    display: flex;
+
+    position: relative;
+
+
+    border-radius: 10px;
+
+}
+
+
+
+
+.player {
+    width: 50%;
+    height: 100%;
+
+    text-align: center;
+
+    padding-top: 90px;
+}
+
+
+
+
+.player-1 {
+    background-color: #e2b4c0;
+}
+
+
+
+
+.player-2 {
+    background-color: #bd819c;
+}
+
+
+
+
+.player h1 {
+    font-size: 40px;
+
+    font-weight: 400;
+
+    color: #222;
+}
+
+
+
+
+.score {
+    font-size: 80px;
+
+    color: #ca345c;
+
+    margin-top: 25px;
+}
+
+
+
+.current {
+    width: 210px;
+    height: 120px;
+
+    background-color: #c8325d;
+
+    color: white;
+
+    border-radius: 10px;
+
+    margin: 140px auto 0;
+
+    padding-top: 20px;
+}
+
+
+
+
+.current span:first-child {
+    font-size: 17px;
+}
+
+
+
+
+.current span:last-child {
+    display: inline-block;
+
+    font-size: 35px;
+
+    margin-top: 10px;
+}
+
+
+
+.controls {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 220px;
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/* NEW GAME */
+
+.new-game {
+    width: 200px;
+    height: 50px;
+
+    margin-top: 40px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: white;
+
+    color: #555;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+
+/* DICE */
+
+.dice {
+    width: 100px;
+    height: 100px;
+
+    background-color: white;
+
+    margin-top: 75px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 65px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* BUTTONS */
+
+.btn {
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: white;
+
+    color: #555;
+
+    font-size: 17px;
+
+    height: 50px;
+
+    cursor: pointer;
+}
+
+
+/* ROLL DICE */
+
+.btn:nth-of-type(1) {
+    width: 185px;
+
+    margin-top: 130px;
+}
+
+
+/* HOLD */
+
+.btn:nth-of-type(2) {
+    width: 145px;
+
+    margin-top: 20px;
+}
+
+
+/* HOVER */
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .game {
+        width: 95%;
+        height: 550px;
+    }
+
+    .player {
+        padding-top: 70px;
+    }
+
+    .player h1 {
+        font-size: 25px;
+    }
+
+    .score {
+        font-size: 55px;
+    }
+
+    .current {
+        width: 130px;
+        height: 100px;
+
+        margin-top: 120px;
+    }
+
+    .controls {
+        width: 180px;
+    }
+
+    .dice {
+        width: 70px;
+        height: 70px;
+
+        font-size: 45px;
+
+        margin-top: 80px;
+    }
+
+    .new-game {
+        width: 170px;
+    }
+
+    .btn:nth-of-type(1) {
+        width: 160px;
+
+        margin-top: 120px;
+    }
+
+    .btn:nth-of-type(2) {
+        width: 130px;
+    }
+}
