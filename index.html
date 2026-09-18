@@ -1,69 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Dice</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <div class="game">
-
-        <section class="player player-1">
-            <h1>PLAYER 1</h1>
-
-            <p class="score">43</p>
-
-            <div class="current">
-                <span>CURRENT</span>
-                <br>
-                <span>0</span>
-            </div>
-        </section>
-
-
-        
-        <section class="player player-2">
-            <h1>PLAYER 2</h1>
-
-            <p class="score">24</p>
-
-            <div class="current">
-                <span>CURRENT</span>
-                <br>
-                <span>0</span>
-            </div>
-        </section>
-
-
-        <div class="controls">
-
-            <button class="new-game">
-                NEW GAME
-            </button>
-
-            <div class="dice">
-                <img style="height: 50px;" src="dice.png" alt="dice">
-            </div>
-
-            <button class="btn">
-                 ROLL DICE
-            </button>
-
-            <button class="btn">
-                 HOLD
-            </button>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAME-DICE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="player-0 ">
+        <h1 class="title">player 1</h1>
+        <h1 class="score-0">43</h1>
+        <div class="current-container">
+          <p class="current">current</p>
+          <p class="current-score-0">0</p>
         </div>
+      </section>
 
-    </div>
+      <section class="player-1">
+        <h1 class="title">player 2</h1>
+        <h1 class="score-1">24</h1>
+        <div class="current-container">
+          <p class="current">current</p>
+          <p class="current-score-1">0</p>
+        </div>
+      </section>
 
-    <script src="app.js"></script>
 
-</body>
+     <span class="new-game">🔂 NEW GAME</span>
+      <img height="70px" src="./dice.jpg" alt="" />
+      <span class="roll"> 🎲 ROLL DICE </span>
+      <span class="hold">📩 HOLD</span> 
+    </main>
+    <script src="app.js">
 
+    </script>
+  </body>
 </html>
