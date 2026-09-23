@@ -18,6 +18,7 @@ main {
   justify-content: center;
   box-shadow: 1px 1px 10px;
   border-radius: 10px;
+  position: relative;
 }
 
 .player-0 {
@@ -25,6 +26,7 @@ main {
   background-color: rgb(255, 255, 255, 0.3);
   border-radius: 10px 0px 0px 10px;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .player-1 {
@@ -32,6 +34,7 @@ main {
   background-color: rgb(255, 255, 255, 0.3);
   border-radius: 0px 10px 10px 0px;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .active {
@@ -73,48 +76,46 @@ main {
   font-size: 25px;
 }
 
-
-span {
+.btn-new-game,
+img,
+.btn-roll,
+.btn-hold {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #444;
-  background-color: rgba(255, 255, 255, 0.8);
-  font-family: inherit;
-  font-size: 25px;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 10px 12px;
-  border-radius: 50px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  left: 510px;
 }
-
-
-
-.new-game {
-  top: 250px;
-}
-
-.roll{
-  top: 440px;
-}
-
-.hold{
-  top: 550px; 
-}
-
 
 img {
-  position: absolute;
-  left: 50%;
-  top: 350px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
+  top: 150px;
+  left: 486px;
 }
 
+.btn-roll {
+  top: 450px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.771);
+  padding: 10px 20px;
+  left: 465px;
+  cursor: pointer;
+}
 
+.btn-hold {
+  top: 520px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.771);
+  padding: 10px 20px;
+  left: 478px;
+  cursor: pointer;
+}
 
+.btn-new-game {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.771);
+  padding: 10px 20px;
+  left: 460px;
+  cursor: pointer;
+  top: 30px;
+}
 
-
-
+.hidden {
+  display: none;
+}
